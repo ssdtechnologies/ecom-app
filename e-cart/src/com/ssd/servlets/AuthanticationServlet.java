@@ -39,25 +39,25 @@ public class AuthanticationServlet extends HttpServlet {
 		
 		boolean isValied=true;
 		
-		if(fname.isEmpty() || fname==null || fname.isBlank()) {
+		if(fname==null || fname.isEmpty() ||  fname.isBlank()) {
 			
 			errMsg = errMsg+"first Name";
 			isValied=false;
 			
 		}
-		if(lname.isEmpty() || lname==null || lname.isBlank()) {
+		if(lname==null || lname.isEmpty() ||  lname.isBlank()) {
 			
 			errMsg = errMsg+"last Name";
 			isValied=false;
 			
 		}
-		if(email.isEmpty() || email==null || email.isBlank()) {
+		if(email==null || email.isEmpty() ||  email.isBlank()) {
 			
 			errMsg = errMsg+" email";
 			isValied=false;
 			
 		}
-		if(pwd.isEmpty() || pwd==null || pwd.isBlank()) {
+		if(pwd==null || pwd.isEmpty() ||  pwd.isBlank()) {
 			
 			errMsg = errMsg+" password";
 			isValied=false;
