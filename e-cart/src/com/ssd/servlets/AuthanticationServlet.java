@@ -84,6 +84,12 @@ public class AuthanticationServlet extends HttpServlet {
 			isValied = false;
 
 		}
+		if (pwd == null || pwd.isEmpty() || pwd.isBlank() || pwd.length()>8) {
+
+			errMsg = errMsg + " password";
+			isValied = false;
+
+		}
 		return isValied;
 	}
 
